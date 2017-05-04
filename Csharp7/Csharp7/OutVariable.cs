@@ -14,13 +14,13 @@ namespace Csharp7
             int minutes;
             int seconds;
             GetTime(out hour, out minutes, out seconds);
-            Console.WriteLine($"{hour}:{minutes}:{seconds}");
+            Console.WriteLine($"{hour}:{minutes}:{seconds} -- old way");
         }
 
         public void RunNewWay()
         {
-            GetTime(out int hour, out int minutes, out int seconds);
-            Console.WriteLine($"{hour}:{minutes}:{seconds}");
+            GetTime(out var hour, out var minutes, out int seconds);
+            Console.WriteLine($"{hour}:{minutes}:{seconds} -- new way");
         }
 
         private void GetTime(out int hour, out int minutes, out int seconds)

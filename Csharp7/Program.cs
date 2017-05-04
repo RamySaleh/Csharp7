@@ -12,12 +12,31 @@ namespace Csharp7
         static void Main(string[] args)
         {
             // Static using demo
+            WriteLine("-- Static using demo --");
+            WriteLine("");
             new StaticUsing().CallStaticMethodWithoutClassName();
             WriteLine("----------------------------");
 
             // Out variable demo
-            new OutVariable().RunOldWay();
-            new OutVariable().RunNewWay();
+            WriteLine("-- Out variable demo --");
+            WriteLine("");
+            var outVariable = new OutVariable();
+            outVariable.RunOldWay();
+            outVariable.RunNewWay();
+            WriteLine("----------------------------");
+
+            // Pattern matching demo
+            WriteLine("-- Pattern matching demo --");
+            WriteLine("");
+            var patternMatching = new PatternMatching();
+            patternMatching.PrintSumOld(10);
+            patternMatching.PrintSumNew(10);
+            WriteLine("----------------------------");
+
+            // Conditional Switch demo
+            WriteLine("-- Conditional Switch demo --");
+            WriteLine("");
+            new ConditionalSwitch().PrintEmployeesDescription();
             WriteLine("----------------------------");
 
             ReadKey();
