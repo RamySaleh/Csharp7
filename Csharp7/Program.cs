@@ -48,6 +48,12 @@ namespace Csharp7
             valueTuple.PrintTupleDictionary();
             WriteLine("----------------------------");
 
+            // Local functions demo
+            WriteLine("-- Local functions demo --");
+            WriteLine("");
+            new LocalFunctions().PrintFibonacci();
+            WriteLine("----------------------------");
+
             ReadKey();
         }
     }
