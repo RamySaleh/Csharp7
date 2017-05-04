@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Csharp7\ConditionalSwitch.cs" />
+    <Compile Include="Csharp7\Enhancements.cs" />
     <Compile Include="Csharp7\LocalFunctions.cs" />
     <Compile Include="Csharp7\OutVariable.cs" />
     <Compile Include="Csharp7\PatternMatching.cs" />

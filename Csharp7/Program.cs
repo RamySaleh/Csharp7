@@ -54,6 +54,12 @@ namespace Csharp7
             new LocalFunctions().PrintFibonacci();
             WriteLine("----------------------------");
 
+            // Language enhancements demo
+            WriteLine("-- Language enhancements demo --");
+            WriteLine("");
+            new Enhancements().PrintEnhancements();
+            WriteLine("----------------------------");
+
             ReadKey();
         }
     }
