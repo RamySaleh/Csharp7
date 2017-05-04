@@ -39,6 +39,15 @@ namespace Csharp7
             new ConditionalSwitch().PrintEmployeesDescription();
             WriteLine("----------------------------");
 
+            // Value tuples demo
+            WriteLine("-- Value tuples demo --");
+            WriteLine("");
+            var valueTuple = new ValueTuple();
+            valueTuple.PrintTime();
+            valueTuple.PrintTimeDecomposed();
+            valueTuple.PrintTupleDictionary();
+            WriteLine("----------------------------");
+
             ReadKey();
         }
     }
